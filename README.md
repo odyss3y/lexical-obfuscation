@@ -69,4 +69,4 @@ MIT — do what you want, just don't blame me when your AI gets ideas.
 
 ## 🧠 Credit
 
-Inspired by Graham Rawlinson’s 1976 thesis at Nottingham University on how humans can still read jumbled words, as long as the first and last letters remain intact.
+Inspired by Graham Rawlinson’s 1976 thesis at Nottingham University on how humans can still read jumbled words, as long as the first and last letters remain intact. Conceptual design and initial code generation assisted by OpenAI ChatGPT-4o and ChatGPT-o3-mini-high.
