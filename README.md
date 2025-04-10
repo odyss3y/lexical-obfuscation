@@ -58,7 +58,7 @@ Option             Description
 Just clone and run. No dependencies.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/lexical-obfuscation.git
+git clone https://github.com/odyss3y/lexical-obfuscation.git
 cd lexical-obfuscation
 python lexical-obfuscation.py "Some sample text"
 ```
