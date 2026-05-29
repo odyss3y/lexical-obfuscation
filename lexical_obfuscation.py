@@ -20,6 +20,11 @@ Note:
 import re
 import random
 import argparse
+import hashlib
+
+def stable_word_seed(word, seed):
+    digest = hashlib.sha256(f"{seed}:{word}".encode("utf-8")).digest()
+    return int.from_bytes(digest[:8], "big")
 
 def scramble_word(word, preserve_boundaries=True, deterministic=False, seed=42):
     """
@@ -40,8 +45,7 @@ def scramble_word(word, preserve_boundaries=True, deterministic=False, seed=42):
     if preserve_boundaries:
         first, middle, last = word[0], list(word[1:-1]), word[-1]
         if deterministic:
-            # Mix the seed with the word's hash to get reproducible yet word-specific shuffling.
-            random.seed(seed + hash(word))
+            random.seed(stable_word_seed(word, seed))
         else:
             random.seed()
         random.shuffle(middle)
@@ -49,7 +53,7 @@ def scramble_word(word, preserve_boundaries=True, deterministic=False, seed=42):
     else:
         letters = list(word)
         if deterministic:
-            random.seed(seed + hash(word))
+            random.seed(stable_word_seed(word, seed))
         else:
             random.seed()
         random.shuffle(letters)

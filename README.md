@@ -37,11 +37,11 @@ The miiteoaodrznn of urabn itnfrrcsruatue aeclcearets scoio-ecmnoioc scottiafati
 Run from the command line:
 
 ```bash
-python lexical-obfuscation.py "Your text here"
+python lexical_obfuscation.py "Your text here"
 ```
 Or specify options:
 ```bash
-python lexical-obfuscation.py "Your text here" --no-boundary --deterministic --seed 123
+python lexical_obfuscation.py "Your text here" --no-boundary --deterministic --seed 123
 ```
 ### Command-Line Options
 
@@ -60,7 +60,7 @@ Just clone and run. No dependencies.
 ```bash
 git clone https://github.com/odyss3y/lexical-obfuscation.git
 cd lexical-obfuscation
-python lexical-obfuscation.py "Some sample text"
+python lexical_obfuscation.py "Some sample text"
 ```
 
 ### 📄 License
@@ -69,4 +69,4 @@ MIT — do what you want, just don't blame me when your AI gets ideas.
 
 ## 🧠 Credit
 
-Inspired by Graham Rawlinson’s 1976 thesis at Nottingham University on how humans can still read jumbled words, as long as the first and last letters remain intact. Conceptual design and initial code generation assisted by OpenAI ChatGPT-4o and ChatGPT-o3-mini-high.
+Inspired by Graham Rawlinson’s 1976 thesis at Nottingham University on how humans can still read jumbled words, as long as the first and last letters remain intact. Conceptual design and initial code generation assisted by OpenAI ChatGPT-4o, ChatGPT-o3-mini-high, and GPT-5.5 medium.
